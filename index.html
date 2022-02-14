@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Navigation Links -->
+        <nav class="nav">
+            <a href="" class="logo">Logo</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href=''>Home</a></li>
+                <li class="nav-item"><a href=''>About Us</a></li>
+                <li class="nav-item nav-item-parent">
+                    <a href='#'>Contact Us</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-item"><a href=''>Facebook</a></li>
+                        <li class="sub-nav-item"><a href=''>Twitter</a></li>
+                    </ul>
+                
+                </li>
+                <li class="nav-item"><a href=''>Log Into Account</a></li>
+            </ul>
+        </nav>
+        <!-- End of Navigation Links -->
+
+
+        <!-- Main Content -->
+        <main class="main">
+            <section class="section">
+                <h1>Main contents</h1>
+
+            </section>
+
+            <aside class="aside">
+                <h3>Sign Up</h3>
+            </aside>
+
+        </main>
+        <!-- End of Main Content -->
+
+    </div>
+    
+<script>
+    //const contactUs = document.querySelector(".nav-menu>li.nav-item:nth-child(3)>a:first-child")
+    const contactUs = document.querySelector(".nav-item-parent")
+    const subNav = document.querySelector(".sub-nav");
+    const main = document.querySelector(".main");
+    contactUs.onmouseover = function(){
+        subNav.style.display = 'block';
+    }
+
+    contactUs.onmouseleave = function(){
+        subNav.style.display = 'none';
+    }   
+
+   document.body.addEventListener("click", function(){
+     subNav.style.display = 'none';
+   }, true)
+</script>
+</body>
+
+
+</html>

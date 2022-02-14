@@ -1,0 +1,104 @@
+:root{
+    background-color: #eee;
+}
+
+body{
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    width: 95%;
+    /* justify-content: flex-start; */
+}
+
+.logo{
+    color: white;
+}
+
+.nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 1.2em;
+    width: 100%;
+}
+
+.sub-nav{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 1em;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    display: none;
+}
+
+.sub-nav a{
+    
+}
+
+.nav-item{
+    margin-left: 1em;
+}
+
+.sub-nav-item{
+    margin-top: .5em;
+}
+
+li.nav-item a{
+    color: white;
+    text-decoration: none;
+    padding: .8em;
+}
+
+ul.nav-menu > li.nav-item:last-child > a{
+    background-color: green;
+}
+
+ul.nav-menu > li.nav-item:last-child{
+    margin-left: auto;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+
+
+.section{
+    background-color: #eee;
+    flex-grow: 3;
+    padding: 1em;
+    /* flex-shrink: 3;
+    flex-basis: 10%; */
+
+}
+
+.aside{
+    background-color: gold;
+    flex-grow: 1;
+    /* flex-shrink: 3;
+    flex-basis: 10%; */
+}
+
+.aside h3{
+    padding: 1em;
+}
+
+
+
+
+
+
